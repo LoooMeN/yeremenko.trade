@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wdth,wght@91.4,400..900&display=swap");
 @keyframes rotate {
   0% {
@@ -938,6 +939,54 @@ section {
   display: none;
 }
 
+#payments {
+  padding-bottom: 40px;
+}
+#payments .first-row {
+  margin-bottom: 0;
+}
+#payments .first-row .title-wrapper {
+  margin-bottom: 20px;
+}
+#payments .second-row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#payments .copy {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 1;
+  display: inline;
+}
+#payments .copy img {
+  width: 20px;
+  height: 20px;
+}
+#payments .copy::after {
+  content: "✓";
+  color: white;
+  background-color: #FF5E2A;
+  position: absolute;
+  font-size: 10px;
+  top: 0;
+  left: -2px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 100ms;
+}
+#payments .copy.--active::after {
+  opacity: 1;
+}
+
 @media (max-width: 1439px) {
   html {
     scroll-padding-top: 80px;
@@ -1338,6 +1387,9 @@ section {
   }
   .title-wrapper.--big-margin {
     margin-bottom: 48px;
+  }
+  #payments .second-row .number-text {
+    font-size: 16px;
   }
   .header-wrapper {
     display: flex;
