@@ -113,12 +113,11 @@ section {
   display: none;
 }
 .header-wrapper .header .header-logo {
-  width: 199px;
-  height: 34px;
+  width: 200px;
   color: #0B0B0B;
   transition: color 0.3s ease-in;
 }
-.header-wrapper .header .header-logo svg {
+.header-wrapper .header .header-logo img {
   width: 100%;
   height: 100%;
 }
@@ -310,7 +309,8 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   height: 630px;
-  column-gap: 80px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
   row-gap: 48px;
 }
 .product-wrapper .product .image-slider {
@@ -487,6 +487,7 @@ section {
   color: #FFF;
   background: #0B0B0B;
   cursor: pointer;
+  width: -moz-max-content;
   width: max-content;
   text-decoration: none;
   display: flex;
@@ -675,6 +676,14 @@ section {
   background: none;
   width: 100%;
 }
+.form-wrapper .form .form-body form input::-moz-placeholder {
+  font-family: Roboto;
+  color: #0B0B0B;
+  font-size: 20px;
+  line-height: 150%;
+  color: #0B0B0B;
+  font-weight: 500;
+}
 .form-wrapper .form .form-body form input::placeholder {
   font-family: Roboto;
   color: #0B0B0B;
@@ -806,8 +815,8 @@ section {
   border-bottom: 1px solid #FFF;
 }
 .footer-wrapper .footer .first-row .logo-footer {
-  width: 196px;
-  height: 34px;
+  width: 200px;
+  filter: invert(1);
 }
 .footer-wrapper .footer .first-row .footer-links {
   display: flex;
@@ -877,6 +886,7 @@ section {
 }
 .fortifications .hero-wrapper .left .hero-subtitle {
   background-color: #C1C1C1;
+  width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   padding: 10px;
@@ -902,6 +912,7 @@ section {
   min-width: 240px;
   color: black;
   background-color: #C1C1C1;
+  height: -moz-max-content;
   height: max-content;
   padding: 5px;
 }
@@ -1041,6 +1052,7 @@ section {
     background: #FFF;
     align-items: center;
     display: flex;
+    width: -moz-max-content;
     width: max-content;
     gap: 8px;
     text-decoration: none;
@@ -1104,7 +1116,8 @@ section {
   .mission-wrapper .second-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 97px;
+    -moz-column-gap: 97px;
+         column-gap: 97px;
     row-gap: 56px;
   }
   .promo-video-wrapper {
@@ -1132,7 +1145,8 @@ section {
   .product-wrapper .product .product-characteristics-wrapper .product-characteristics {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 77px;
+    -moz-column-gap: 77px;
+         column-gap: 77px;
     row-gap: 24px;
   }
   .product-wrapper .product .product-characteristics-wrapper .product-characteristics .characteristic .char-text .char-value {
@@ -1339,7 +1353,7 @@ section {
     bottom: -100vh;
   }
   .header-wrapper.--open .header .header-logo {
-    color: #FFF;
+    filter: invert(1);
   }
   .header-wrapper.--open .header .mobile-burger {
     animation: menu 0.3s;
@@ -1406,6 +1420,7 @@ section {
     background: #FFF;
     align-items: center;
     display: flex;
+    width: -moz-max-content;
     width: max-content;
     gap: 8px;
     text-decoration: none;
@@ -1507,7 +1522,8 @@ section {
   .product-wrapper .product .product-characteristics-wrapper .product-characteristics {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 77px;
+    -moz-column-gap: 77px;
+         column-gap: 77px;
     row-gap: 24px;
     margin-bottom: 48px;
   }

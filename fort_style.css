@@ -127,6 +127,7 @@
   .fortifications .hero-wrapper .hero-fort-wrapper .left .hero-subtitle {
     position: absolute;
     right: 0px;
+    width: -moz-max-content;
     width: max-content;
     top: 5px;
   }
