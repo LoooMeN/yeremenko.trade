@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wdth,wght@91.4,400..900&display=swap');
+
+$color-black: #0B0B0B;
+$color-red: #FF5E2A;
+$color-gray: #7C7C7C;
+$color-light: #E1DFDD;
+$color-white: #FFF;
+$color-fort-gray: #C1C1C1;
+
+$desktop-content: 1312px;
+$tablet-content: 680px;
+$mobile-content: 343px;
+
+@mixin tektur {
+    font-family: "Tektur";
+    color: $color-black;
+    text-transform: uppercase;
+}
+
+@mixin roboto {
+    font-family: Roboto;
+    color: $color-black;
+}
+
+@mixin head1 {
+    @include tektur();
+
+    font-size: 92px;
+    line-height: 110%;
+}
+
+@mixin head2 {
+    @include tektur();
+
+    font-size: 80px;
+    line-height: 110%;
+}
+
+@mixin head3 {
+    @include tektur();
+
+    font-size: 64px;
+    line-height: 110%;
+} 
+
+@mixin head4 {
+    @include tektur();
+
+    font-size: 38px;
+    line-height: 80%;
+}
+
+@mixin head5 {
+    @include tektur();
+
+    font-size: 40px;
+    line-height: 110%;
+}
+
+@mixin head6 {
+    @include tektur();
+
+    font-size: 24px;
+    line-height: 110%;
+}
+
+@mixin t18 {
+    @include tektur();
+
+    font-size: 18px;
+    line-height: 135%;
+}
+
+@mixin text-large {
+    @include roboto();
+
+    font-size: 20px;
+    line-height: 150%;
+}
+
+@mixin text-medium {
+    @include roboto();
+
+    font-size: 18px;
+    line-height: 140%;
+}
+
+@mixin text-regular {
+    @include roboto();
+
+    font-size: 16px;
+    line-height: 140%;
+}
+
+@mixin text-small {
+    @include roboto();
+
+    font-size: 14px;
+    line-height: 140%;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes menu {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(90deg); background-image: url("./static/icons/close.svg");}
+    100% {transform: rotate(180deg); background-image: url("./static/icons/close.svg");}
+}

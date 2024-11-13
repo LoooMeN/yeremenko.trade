@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wdth,wght@91.4,400..900&display=swap");
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes menu {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+    background-image: url("./static/icons/close.svg");
+  }
+  100% {
+    transform: rotate(180deg);
+    background-image: url("./static/icons/close.svg");
+  }
+}
+@keyframes wall-up {
+  0% {
+    transform: translateY(800px);
+  }
+  85% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes show-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .left {
+  background-color: #C1C1C1;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .left h1 {
+  font-size: 200px;
+  opacity: 0;
+  animation: show-text 1.5s forwards;
+  animation-delay: 4.5s;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .left .hero-subtitle {
+  width: 50%;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .right {
+  min-width: 375px;
+  min-height: 360px;
+  overflow: hidden;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper {
+  position: relative;
+  min-width: 375px;
+  min-height: 360px;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-image {
+  position: absolute;
+  transform: translateY(800px);
+  animation: wall-up 2s forwards;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-1 {
+  top: 0;
+  left: 36px;
+  z-index: 1;
+  animation-delay: 0.4s;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-2 {
+  top: 11px;
+  left: 24px;
+  z-index: 2;
+  animation-delay: 0.8s;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-3 {
+  top: 22px;
+  left: 12px;
+  z-index: 3;
+  animation-delay: 1.2s;
+}
+.fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-4 {
+  top: 33px;
+  left: 0;
+  z-index: 4;
+  animation-delay: 1.8s;
+  animation-duration: 2.5s;
+}
+
+@media (max-width: 1439px) {
+  .fortifications .hero-wrapper {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper {
+    gap: 0;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .right {
+    margin-top: -40px;
+    width: 100%;
+  }
+}
+@media (max-width: 744px) {
+  .fortifications .hero-wrapper .hero-fort-wrapper {
+    width: 100%;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .left {
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .left h1 {
+    font-size: 120px;
+    margin-left: 10px;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .left .hero-subtitle {
+    position: absolute;
+    right: 0px;
+    width: max-content;
+    top: 5px;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .right {
+    width: 100%;
+    min-width: unset;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper {
+    width: 290px;
+    min-width: unset;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-image {
+    width: 300px;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-1 {
+    top: 0;
+    left: 33px;
+    z-index: 1;
+    animation-delay: 1s;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-2 {
+    top: 10px;
+    left: 22px;
+    z-index: 2;
+    animation-delay: 1.4s;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-3 {
+    top: 21px;
+    left: 11px;
+    z-index: 3;
+    animation-delay: 1.8s;
+  }
+  .fortifications .hero-wrapper .hero-fort-wrapper .right .fort-image-wrapper .fort-4 {
+    top: 32px;
+    left: 0;
+    z-index: 4;
+    animation-delay: 2.7s;
+    animation-duration: 3s;
+  }
+}
